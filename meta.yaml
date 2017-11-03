@@ -1,10 +1,10 @@
 package:
-  name: stable-mutect1
-  version: "0.1.0"
+  name: mutect
+  version: "1.1.4"
 
 source:
   git_rev: master
-  git_url: https://github.com/jason-weirather/stable-mutect1.git
+  git_url: https://github.com/jason-weirather/mutect.git
 
 build:
   number: 0
@@ -21,6 +21,6 @@ requirements:
     - java-jdk 7.*
 
 about:
-  home: https://github.com/jason-weirather/stable-mutect1
+  home: https://github.com/jason-weirather/mutect
   license: Custom
   license_file: mutect.LICENSE.TXT
