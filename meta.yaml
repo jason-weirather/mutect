@@ -10,14 +10,7 @@ build:
   number: 0
 
 requirements:
-  build:
-    - python
-    - setuptools
-    - perl
-    - java-jdk 7.*
   run:
-    - python
-    - perl
     - java-jdk 7.*
 
 about:
