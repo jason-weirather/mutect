@@ -1,0 +1,26 @@
+package:
+  name: stable-mutect1
+  version: "0.1.0"
+
+source:
+  git_rev: master
+  git_url: https://github.com/jason-weirather/stable-mutect1.git
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - perl
+    - java-jdk 7.*
+  run:
+    - python
+    - perl
+    - java-jdk 7.*
+
+about:
+  home: https://github.com/jason-weirather/stable-mutect1
+  license: Custom
+  license_file: mutect.LICENSE.TXT

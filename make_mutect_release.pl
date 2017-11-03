@@ -1,4 +1,4 @@
-#! /usr/bin/perl -w
+#!/usr/bin/env perl
 use strict;
 
 if (scalar(@ARGV) < 3) {
@@ -20,7 +20,7 @@ if (-e $BASE_DIR) { `rm -rf $BASE_DIR`; }
 
 
 # update CGA and get revision info
-system("cd $BASE_DIR && git clone git\@github.com:broadinstitute/mutect.git") == 0 or die();
+system("cd $BASE_DIR && git clone git\@github.com:jason-weirather/stable-mutect1.git") == 0 or die();
 
 # check to see if this tag exists
 my $cnt = `cd $BASE_DIR/mutect && git ls-remote --tags -q | grep refs/tags/$mutect_tag | wc -l`;
