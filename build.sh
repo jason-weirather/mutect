@@ -2,4 +2,4 @@
 mkdir -p $PREFIX/opt
 cp $SRC_DIR/bin/muTect-1.1.4.jar $PREFIX/opt/muTect-1.1.4.jar
 cp $SRC_DIR/bin/mutect $PREFIX/bin/mutect
-cp $SRC_DIR/.condarc $PREFIX/.condarc
+conda config --add channels bioconda
